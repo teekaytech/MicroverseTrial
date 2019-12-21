@@ -1,33 +1,65 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="css/style1.css">
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Span Registration Page</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-<form class="my-form">
-    <h2>Sign Up</h2>
-          <div class="form-group">
-              <label for="Email" class="floatLabel">Email</label>
-              <input id="Email" name="Email" type="text">
-          </div>
-          <div class="form-group">
-              <label for="password" class="floatLabel">Password</label>
-              <input id="password" name="password" type="password">
-              <span>Enter a password longer than 8 characters</span>
-          </div>
-          <div class="form-group">
-              <label >Confirm Password</label>
-              <input id="confirm_password" name="confirm_password" type="password">
-              <span>Your passwords do not match</span>
-          </div>
-          <div>
-              <input type="submit" value="Create My Account" id="submit">
-          </div>
-      </form>
+
+<div class="form-style-10">
+<h1>Microverse Entry Trial Survey!<span>Sign up for the 6 - 8 months software training program</span></h1>
+<form>
+    <div class="section"><span>1</span>Name &amp; Address</div>
+    <div class="inner-wrap">
+        <label>Your Full Name<sup>**</sup> <input type="text" name="name" />
+    </label>
+        <label>Address <sup>**</sup> <textarea name="address"></textarea>
+    </label>
+    </div>
+    <div class="section"><span>2</span>Email &amp; Phone Number</div>
+    <div class="inner-wrap">
+        <label>Email Address <sup>**</sup> <input type="email" name="email"/>
+    </label>
+        <label>Phone Number  <sup>**</sup><input type="text" name="phone"/>
+    </label>
+    </div>
+
+    <div class="section"><span>3</span>Gender</div>
+    <div class="inner-wrap">
+        <label>Gender <sup>**</sup>
+                <select id = "Gender" name="gender">
+                        <option value="0">Select gender</option>
+                        <option value = "Male">Male</option>
+                        <option value = "Female">Female</option>                        
+                      </select>
+                      <span class="error"><?php echo $genderErr; ?></span>
+        </label>
+        
+    </div>
+
+    <div class="section"><span>4</span>Experience</div>
+    <div class="inner-wrap">
+        <label>Years of Experience <input type="number" name="yr" min="0"/> </label>
+        <label>Movies Featured: <input type="text" name="movies" placeholder="Nimbe, Daddy's Princess......" /></label>
+        
+    </div>
+    <div class="section"><span>5</span>Social  Media Handles</div>
+    <div class="inner-wrap">
+    <label>Facebook <input type="text" name="fb" /> </label>
+    <label>Instagram <input type="text" name="ig" /></label>
+    <label>Twitter <input type="text" name="tw" /></label>
+    <label>SnapChat <input type="text" name="sc" /></label>
+    </div>
+
+    
+    <div class="button-section">
+     <span class="privacy-policy">
+     <input type="checkbox" name="promo_mail">You agree to recieve promotional mails from cast.i.ng
+     </span>
+     <input type="submit" name="submit" value="Register" />
+    </div>
+</form
 </body>
-</html>>
+</html>
