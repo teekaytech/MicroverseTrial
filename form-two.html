@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Span Registration Page</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_two.css'>
+</head>
+<body>
+
+<div class="form-style-10">
+<h1>SPAN ACTORS WORKSHOP!<span>Sign up for the 3 months actors Workshop with advanced Master Class</span></h1>
+<form>
+    <div class="section"><span>1</span>Name &amp; Address</div>
+    <div class="inner-wrap">
+        <label>Your Full Name<sup>**</sup> <input type="text" name="name" />
+    </label>
+        <label>Address <sup>**</sup> <textarea name="address"></textarea>
+    </label>
+    </div>
+    <div class="section"><span>2</span>Email &amp; Phone Number</div>
+    <div class="inner-wrap">
+        <label>Email Address <sup>**</sup> <input type="email" name="email"/>
+    </label>
+        <label>Phone Number  <sup>**</sup><input type="text" name="phone"/>
+    </label>
+    </div>
+
+    <div class="section"><span>3</span>Gender</div>
+    <div class="inner-wrap">
+        <label>Gender <sup>**</sup>
+                <select id = "Gender" name="gender">
+                        <option value="0">Select gender</option>
+                        <option value = "Male">Male</option>
+                        <option value = "Female">Female</option>                        
+                      </select>
+                      <span class="error"><?php echo $genderErr; ?></span>
+        </label>
+        <label><p>Select Master Class to Apply for:<sup>**</sup></p></label> 
+        <p><label><input type="checkbox"  name="master_class[]" value="Joke Silva"> Joke Silva</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Patrick Diabuah" > Patrick Diabuah</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Sarah Bolous"> Sarah Boulos</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Fares Boulos"> Fares Boulos</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Ita"> Ita Hozaife</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Kelvin Mary"> Kelvinmary Ndukwe</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Orji Ibe"> Orji Ibe</label></p>
+        <p><label><input type="checkbox" name="master_class[]" value="Mustapha Lawal">Mustapha Lawal</label></p>
+    </div>
+
+    <div class="section"><span>4</span>Experience</div>
+    <div class="inner-wrap">
+        <label>Years of Experience <input type="number" name="yr" min="0"/> </label>
+        <label>Movies Featured: <input type="text" name="movies" placeholder="Nimbe, Daddy's Princess......" /></label>
+        
+    </div>
+    <div class="section"><span>5</span>Social  Media Handles</div>
+    <div class="inner-wrap">
+    <label>Facebook <input type="text" name="fb" /> </label>
+    <label>Instagram <input type="text" name="ig" /></label>
+    <label>Twitter <input type="text" name="tw" /></label>
+    <label>SnapChat <input type="text" name="sc" /></label>
+    </div>
+
+    
+    <div class="button-section">
+     <span class="privacy-policy">
+     <input type="checkbox" name="promo_mail">You agree to recieve promotional mails from cast.i.ng
+     </span>
+     <input type="submit" name="submit" value="Register" />
+    </div>
+</form
+</body>
+</html>
